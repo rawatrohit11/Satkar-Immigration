@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+.body{
+  overflow-x: hidden;
+}
+
+/* <--------------------------Navbar------------------------> */
+
+
+.wrapper{
+  background: #001f50;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  /* overflow: hidden; */
+}
+.navlogo{
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background: #323c4e;
+  text-decoration: none;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #001f50;
+  padding: 0 100px 0 15px;
+}
+.search-box input::placeholder{
+  color: #f2f2f2;
+}
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+  background: #001f50;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+/* Dropdown Menu code start */
+
+
+.content .links ul{
+  position: absolute;
+  background: #001f50;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+
+  /* <-----------------Parallax-------------------> */
+
+
+  .servicesparallax{
+    background-image: url("../media/serviceparallax.jpg");
+    height: 450px;
+    width: 100%;  
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+  .bg-light {
+    background-color: #1d2764!important;
+  }
+  .parallaxtext{
+     display: table-cell;
+     vertical-align: middle;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     text-transform: uppercase;
+     font-size: 80px;
+     font-weight: bold;
+     letter-spacing: 6px;
+}
+
+  
+
+/* ---------------------------services --------------------*/
+
+
+.serviceimg{
+    width: 500px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
+   
+}
+.service{
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 35px;
+  
+}
+.col-md-6{
+    overflow: hidden;
+}
+.servicepara{
+    text-align: center;
+    font-size: 20px;
+    
+}
+.pb{
+    padding-bottom: 10px;
+}
+.pb1{
+    padding-bottom: 100px;
+}
+.pb2{
+    padding-top: 150px;
+    padding-left: 50px;
+    
+}
+.pb3{
+    background-color: rgb(182, 246, 248);
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.pb3:hover{
+    background-color: rgb(227, 177, 247);
+    transform: scale(1.1);
+    z-index: 3;
+    box-shadow: 2px 2px 2px grey;
+    overflow: hidden;
+}
+.pb3 h4{
+    color: rgb(90, 90, 90);
+    padding-bottom: 3px;
+    overflow: hidden;
+}
+.pb4{
+    background-color: rgb(227, 177, 247);
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.pb4:hover{
+    background-color: rgb(182, 246, 248);
+    transform: scale(1.1);
+    z-index: 3;
+    box-shadow: 2px 2px 2px grey;
+    overflow: hidden;
+}
+.pb4 h4{
+    color: rgb(90, 90, 90);
+    padding-bottom: 3px;
+}
+.pb5{
+    margin-top: 15px;
+}
+
+
+
+/*--------------- Visa --------------*/
+
+
+.pb13{
+    background-color: rgb(238, 238, 238);
+}
+.visaimg{
+    width: 250px;
+    height: auto;
+    padding-top: 20px;
+}
+.pb6{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    border-left: 1px solid rgb(226, 215, 215);
+    border-right: 1px solid rgb(226, 215, 215);
+    border-bottom: 1px solid rgb(226, 215, 215);
+    transition: 0.5s;
+}
+.pb6:hover{
+    background-color: rgb(234, 235, 186);
+    color: rgb(14, 11, 0);
+    transform: scale(1.1);
+    box-shadow: 1px 1px 1px #2C3E50;
+    z-index: 1;
+
+}
+.pb6 h4{
+    padding-top: 30px;
+}
+
+
+/*------------------ Deal in Country -----------------*/
+
+
+.pb7{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.visa{
+    overflow: hidden;
+}
+.staricon {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    color: rgb(2, 2, 2);
+    display: flex;
+    justify-content: center;
+  }
+  .staricon::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: rgb(8, 8, 8);
+    top: 50%;
+    left: 110px;
+  }
+  .staricon::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    top: 50%;
+    right: 110px;
+  }
+.countryimg{
+    width: 196px;
+    height: auto;
+    padding-top: 20px;
+
+}
+.pb8{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    transition: 0.5s;
+}
+.pb8:hover{
+    background-color: rgb(206, 206, 199);
+    color: rgb(14, 11, 0);
+    transform: scale(1.1);
+    z-index: 1;
+}
+.pb8 h4{
+    padding-top: 30px;
+}
+
+
+/*----------------- footer ------------------------*/
+
+
+.six{
+  background-color: #141c50;
+  margin: 0;
+  height: auto;
+  overflow-y: hidden !important;
+}
+.location{
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+.footheading{
+  overflow: hidden;
+  color: orange;
+}
+.add{
+  overflow: hidden;
+}
+.around{
+  color: white;
+  text-align: center;
+  padding-top: 140px;
+}
+#icon{
+  margin: 2px;
+  font-size: 22px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 19px;
+}
+#icon:hover{
+color: black;
+background-color: #e3822c;
+}
+#icon:visited{
+color: black;
+background-color: white;
+}
+.freelancer{
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+.footerstrip{
+  background-color: rgb(31, 29, 29);
+}
+.copyright{
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+
+/* Responsive code start */
+
+
+@media screen and (max-width: 1250px){
+    .wrapper nav{
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    nav .content .links{
+      margin-left: 30px;
+    }
+    .content .links li a{
+      padding: 8px 13px;
+    }
+    .wrapper .search-box{
+      max-width: calc(100% - 100px);
+    }
+    .wrapper .search-box input{
+      padding: 0 100px 0 15px;
+    }
+    .six{
+      overflow-y: scroll;
+    }
+  }
+  
+  @media screen and (max-width: 900px){
+    .wrapper .menu-icon{
+      display: block;
+    }
+    .wrapper #show-menu:checked ~ .menu-icon i::before{
+      content: "\f00d";
+    }
+    nav .content .links{
+      display: block;
+      position: fixed;
+      background: #001f50;
+      height: 100%;
+      width: 100%;
+      top: 80px;
+      left: -100%;
+      margin-left: 0;
+      max-width: 350px;
+      overflow-y: auto;
+      padding-bottom: 100px;
+      transition: all 0.3s ease;
+    }
+    nav #show-menu:checked ~ .content .links{
+      left: 0%;
+    }
+    .content .links li{
+      margin: 15px 20px;
+    }
+    .content .links li a,
+    .content .links li label{
+      line-height: 40px;
+      font-size: 20px;
+      display: block;
+      padding: 8px 18px;
+      cursor: pointer;
+    }
+    .content .links li a.desktop-link{
+      display: none;
+    }
+  
+    /* dropdown responsive code start */
+  
+    
+    .content .links ul,
+    .content .links ul ul{
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      background: none;
+      max-height: 0px;
+      overflow: hidden;
+    }
+    .content .links #show-destination:checked ~ ul,
+    .content .links #show-services:checked ~ ul,
+    .content .links #show-items:checked ~ ul{
+      max-height: 100vh;
+    }
+    .content .links ul li{
+      margin: 7px 20px;
+    }
+    .content .links ul li a{
+      font-size: 18px;
+      line-height: 30px;
+      border-radius: 5px!important;
+    }
+  }
+    @media(max-width: 768px){
+      .servicesparallax{
+        background-image: url("../media/serviceparallax.jpg");
+        height: 450px;
+        width: 100%;  
+        background-size: cover;
+        background-position: center;
+        display: table;
+        background-attachment: scroll;
+      }
+      .location{
+        margin: 0px 30px 0px 30px !important;
+        padding-bottom: 0px !important;
+      }
+      .footpara{
+        margin: 0px 30px 0px 0px !important;
+      }
+      .around{
+        margin: -130px 30px 0px 30px !important;
+        padding-bottom: 0px !important;
+      }
+      .freelancer{
+        margin: -45px 30px 0px 30px !important;
+        padding-bottom: 0px !important;
+      }
+    .parallaxtext{
+      font-size: 50px !important;
+    }
+    .footheading{
+      font-size: 20px !important;
+    }
+    .footpara{
+      font-size: 12px !important;
+    }
+    .pb{
+      font-size: 25px;
+    }
+    .pb1{
+      font-size: 15px;
+    }
+    .pb3{
+      margin-bottom: 15px !important;
+      margin-right: 30px !important;
+    }
+    .pb4{
+      margin-bottom: 15px !important;
+      margin-right: 30px !important;
+    }
+    .pb5{
+      margin-bottom: 15px !important;
+      margin-right: 30px !important;
+    }
+    .pb6{
+      margin-bottom: 15px !important;
+      margin-right: 30px !important;
+    }
+    .pb7{
+      font-size: 30px;
+    }
+    #icon{
+      font-size: 20px;
+      padding: 10px;
+    }
+    .copyright{
+      font-size: 13px;
+    }
+}
+  @media screen and (max-width: 400px){
+    .wrapper nav{
+      padding: 0 10px;
+    }
+    .content .logo a{
+      font-size: 27px;
+    }
+    .wrapper .search-box{
+      max-width: calc(100% - 70px);
+    }
+    .wrapper .search-box .go-icon{
+      width: 30px;
+      right: 0;
+    }
+    .wrapper .search-box input{
+      padding-right: 30px;
+    }
+  }
+  

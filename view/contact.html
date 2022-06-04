@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="..\css\contact style.css">
+    <title>Contact</title>
+</head>
+<body>
+        <!-- <--------------------Navbar------------------>
+
+
+    <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><a href="#"><img class="navlogo" src="..\media\Satkartar Logo.png" alt="error"></a></div>
+            <ul class="links">
+              <li><a href="..\index.html">Home</a></li>
+              <li>
+                <a href="..\view\Services.html" class="desktop-link">Services</a>
+                <input type="checkbox" id="show-services">
+                <label for="show-services">Services</label>
+                <ul>
+                  <li><a href="..\view\IELTS.html"><i class="fas fa-book-open"></i> IELTS</a></li>
+                  <li><a href="..\view\PTE.html"><i class="fas fa-book-open"></i> PTE</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=" " class="desktop-link">Educational Destination</a>
+                <input type="checkbox" id="show-destination">
+                <label for="show-destination">Educational Destination</label>
+                <ul>
+                    <li><a href="..\view\united-kingdom.html"><i class="fas fa-graduation-cap"></i> United Kingdom</a></li>
+                    <li><a href="..\view\australia.html"><i class="fas fa-graduation-cap"></i> Australia</a></li>
+                    <li><a href="..\view\canada.html"><i class="fas fa-graduation-cap"></i> Canada</a></li>
+                    <li><a href="..\view\new-zealand.html"><i class="fas fa-graduation-cap"></i> New Zealand</a></li>
+                </ul>
+              </li>
+              <li><a href="..\view\gallery.html">Gallery</a></li>
+              <li><a href="..\view\about.html">About</a></li>
+              <li><a href="..\view\WhyUs.html">WhyUs</a></li>
+              <li><a href="..\view\contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+        </nav>
+      </div>
+
+
+      <!-- <-------------------Parallax--------------->
+
+
+        <div class="aboutparallax">
+            <div class="parallaxtext">
+                <span>Contact Us</span>
+            </div>
+        </div>
+        <br><br><br><br>
+
+
+        <!------------------------- form ------------------------->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp"
+                            placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="secondName">Second Name</label>
+                        <input type="text" class="form-control" id="secondName" aria-describedby="secondNameHelp"
+                            placeholder="Second Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn1">Submit</button>
+                </form>
+            </div>
+            <!-- ----------side Contact Detail ----------------->
+            <div class="col-md-6">
+                <div>
+                    <span class="up gap">
+                        <i class="bi bi-geo-alt-fill icon1"> </i><p>Near Sahota Hospital, <br>opposite water tank,Moradabad road kashipur
+                        (244713)</p><br><br></span>
+                    <span class="up"><i class="bi bi-telephone-fill icon2"></i><p>7249912100 / 7249912200</p></span>
+                    <span class="up"><i class="bi bi-envelope-fill icon3"></i><p>satkartarinningration@gmail.com</p></span>
+                </div>
+                <!-- ---------------map ------------------->
+                <div>
+                    <div class="down">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13930.554165386178!2d78.9460474697754!3d29.204766900000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a439b92e4f973%3A0xd03808f7592cb8d4!2sSatkartar%20Immigration!5e0!3m2!1sen!2sin!4v1642650944361!5m2!1sen!2sin"
+                         style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+    <!-- <-------------------Footer----------------->
+    <div class="container-fluid six">
+        <div class="row">
+            <div class="col-md-4 location">
+                <h3 class="footheading"><strong>CONTACT</strong></h3>
+                <p class="footpara">Adress: Near Sahota Hospital, opposite water tank,Moradabad road kashipur (244713)
+                    <br>
+                    Mobile No: 7249912100 /  7249912200;
+                    <br>
+                    Email: satkartarinningration@gmail.com
+                    <br>
+                    Opening Hours
+                    <br>
+                    Monday: 9:30am - 6:30pm <br>
+                    Tuesday: 9:30am - 6:30pm <br>
+                    Wednesday: 9:30am - 6:30pm <br>
+                    Thursday: 9:30am - 6:30pm <br>
+                    Friday: 9:30am - 6:30pm <br>
+                    Saturday: 9:30am - 5:30pm <br>
+                    Sunday: Closed
+                </p>
+            </div>
+            <div class="col-md-4 around">
+                <h3 class="footheading"><strong>AROUND THE WEB</strong></h3>
+                <p class="icons">
+                    <i id="icon" class="fab fa-facebook"></i>
+                    <i id="icon" class="fab fa-instagram"></i>
+                    <i id="icon" class="fab fa-twitter"></i>
+                    <i id="icon" class="fab fa-linkedin-in"></i>
+                    <i id="icon" class="fas fa-at"></i>
+                </p>
+                <h3 class="footheading" id="deal"><strong>DEALS IN COUNTRY</strong></h3>
+                <p class="footparadeal">
+                    Australia ,  Canada ,  New Zealand, U.S.A , United kingdom(U.K),
+                    Ireland,
+                    Singapore, Germany, France, Spain, Malta, UAE (United Arab Emirates), Netherland, Sweden, Spain, Schengen. 
+                </p>
+            </div>
+            <div class="col-md-4 freelancer">
+                <h3 class="footheading"><strong>ABOUT</strong></h3>
+                <p class="footpara">We at Satkartar have the answers to satisfy all your queries on “OPTIONS ABROAD”. We provide all
+                    immigration services and study options across the globe under one roof and under specified time
+                    limits. We are the best immigration consultants in Chandigarh.
+                    Satkartar IELTS institute in chandigarh train students for international courses like IELTS, PTE,
+                    Spoken English and lodge applications for higher education abroad. Apart from this, we even direct
+                    and assist students for embassy interviews and personality development.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footerstrip">
+        <p class="copyright">Copyright © Satkartar Immigration Website 2021</p>
+    </div>
+</body>
+
+</html>
+<script src="..\js\jquery-3.6.0.js"></script>
+<script src="..\js\bootstrap.min.js"></script>
+<script src="..\js\contact.js"></script>
